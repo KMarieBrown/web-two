@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Rochester|Spectral&display=swap');
+
+$primary-heading-font: 'Rochester', cursive;
+$secondary-heading-font: 'Spectral', cursive;
