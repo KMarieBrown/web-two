@@ -2,3 +2,4 @@
 
 $primary-heading-font: 'Rochester', cursive;
 $secondary-heading-font: 'Spectral', cursive;
+$paragraph-font: 'Spectral', cursive;
