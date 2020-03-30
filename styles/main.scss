@@ -1,10 +1,37 @@
 @import "./vendor/normalize";
-@import"./partials/colors";
-@import './partials/mixins';
+@import "./partials/colors";
+@import "./partials/mixins";
+@import "./partials/typography";
 
-
-
-
+body {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   background-color: $primary-background-color;
+}
+.intro {
+   background-image: url(../assets/images/purple-abstract-blur.jpg);
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+   padding: 50px 5px 0px;
+   height: 25vh;
+   h1 {
+      margin: 0;
+      font-family: $primary-heading-font;
+   }
+   h2 {
+      font-family: $secondary-heading-font;
+      color: lighten($secondary-font-color,5%);
+      //color: rgba($secondary-font-color, .7);
+   }
+}
+.projects-main-section {
+   @include main-section-style;
+}
+.projects-subsection {
+   @include subsection-style;
+}
 
 
 
