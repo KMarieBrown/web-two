@@ -32,7 +32,30 @@ body {
 .projects-subsection {
    @include subsection-style;
 }
-
+h2 {
+   margin-top: 0px;
+}
+section {
+   padding-bottom: 10px;
+}
+.container {
+   display: flex;
+   flex-direction: row;
+   padding-bottom: 20px;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.site-frame-match {
+   order: 2;
+}
+.site-pic {
+   width: 180px;
+   height: 121px;
+}
+img {
+   border: 4px solid $secondary-background-color;
+   border-radius: 10px;
+}
 
 
 
