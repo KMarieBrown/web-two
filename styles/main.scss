@@ -14,13 +14,22 @@ body {
    background-size: cover;
    background-position: center;
    margin: 0;
-   padding: 50px 5px 0px;
-   height: 25vh;
+   // padding: 50px 5px 0px;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    h1 {
       margin: 0;
       font-family: $primary-heading-font;
+      // justify-content: center;
+      // align-items: center;
+      // justify-content: center;
+      // align-items: center;
    }
    h2 {
+      margin: 0;
       font-family: $secondary-heading-font;
       color: lighten($secondary-font-color,5%);
       //color: rgba($secondary-font-color, .7);
@@ -34,6 +43,8 @@ body {
 }
 h2 {
    margin-top: 0px;
+   padding-top: 25px;
+   padding-bottom: 25px;
 }
 section {
    padding-bottom: 10px;
@@ -44,9 +55,16 @@ section {
    padding-bottom: 20px;
    justify-content: space-evenly;
    align-items: center;
+   flex-wrap: wrap;
 }
 .site-frame-match {
-   order: 2;
+   flex-basis: 50%;
+}
+.site-frame-mariah {
+   flex-basis: 50%;
+}
+.site-frame-hope {
+   flex-basis: 50%;
 }
 .site-pic {
    width: 180px;
@@ -60,12 +78,52 @@ img {
 
 
 
-
-// Medium screens and up
+/*Medium screens and up*/
 @media (min-width: 768px) {
-   
+   .intro {
+      height: 100vh;
+      h1 {
+         font-size: 75px;
+      }
+      h2 {
+         font-size: 50px;
+         padding-top: 75px;
+         padding-bottom: 75px;
+      }
    }
-// Big screens
- @media (min-width: 1024px) {
-   
+   .site-pic {
+      width: 360px;
+      height: 242px;
    }
+}
+
+
+/*Big screens*/
+@media screen and (min-width: 1024px) {
+   .intro {
+      height: 100vh;
+      h1 {
+         font-size: 75px;
+      }
+      h2 {
+         font-size: 50px;
+         padding-top: 100px;
+         padding-bottom: 100px;
+      }
+   }
+   .site-pic {
+      width: 360px;
+      height: 242px;
+   }
+   .site-frame-match {
+      flex-basis: 30%;
+   }
+   .site-frame-mariah {
+      flex-basis: 30%;
+   }
+   .site-frame-hope {
+      flex-basis: 30%;
+   }
+}
+      
+   
