@@ -397,4 +397,45 @@ body {
   font-family: "Spectral", cursive;
   color: #3a1145;
 }
+
+h2 {
+  margin-top: 0px;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-frame-match {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.site-pic {
+  width: 180px;
+  height: 121px;
+}
+
+img {
+  border: 4px solid #837088;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=main.css.map */
