@@ -30,9 +30,14 @@ body {
       color: lighten($secondary-font-color,5%);
       //color: rgba($secondary-font-color, .7);
    }
-   .service {
-   animation: zoomInDown 4s infinite;
+   div img {
+      margin-top: 15px;
+      height: 15px;
+      border: none;
    }
+   // .service {
+   // animation: zoomInDown 4s infinite;
+   // }
 }
 .projects-main-section {
    @include main-section-style;
@@ -79,17 +84,23 @@ section > h2{
 .site-pic {
    width: 180px;
    height: 121px;
+   animation: slowscale 6s infinite;
 }
 img {
    border: 4px solid $secondary-background-color;
    border-radius: 10px;
 }
-// @keyframes servicerequest {
-   // transform: zoomInDown;
-//  0% {
-    
-//  }  
-// }
+@keyframes slowscale {
+ 0% {
+    transform: none;
+ }
+ 50% {
+   transform: scale(1.1);
+ }  
+ 100% {
+   transform: none;
+ }
+}
 
 
 
@@ -105,6 +116,16 @@ img {
          padding-top: 75px;
          padding-bottom: 75px;
       }
+      .arrows {
+         margin-top: 75px;
+         height: 55px;
+         border: none;  
+      }
+      div img {
+         margin-top: 75px;
+         height: 50px;
+         border: none;  
+      }
    }
    .site-pic {
       width: 360px;
@@ -115,11 +136,7 @@ img {
 
 /*Big screens*/
 @media screen and (min-width: 1024px) {
-   .intro {
-      height: 100vh;
-      h1 {
-         font-size: 75px;
-      }
+   .intro { 
       h2 {
          font-size: 50px;
          padding-top: 100px;
@@ -131,10 +148,6 @@ img {
    }
    section > h2{
       font-size: 28px;
-   }
-   .site-pic {
-      width: 360px;
-      height: 242px;
    }
    .site-frame-match {
       flex-basis: 30%;
