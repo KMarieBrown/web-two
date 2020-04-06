@@ -11,10 +11,10 @@ body {
 }
 .intro {
    background-image: url(../assets/images/purple-abstract-blur.jpg);
+   opacity: 0.85;
    background-size: cover;
    background-position: center;
    margin: 0;
-   // padding: 50px 5px 0px;
    height: 30vh;
    display: flex;
    flex-direction: column;
@@ -23,16 +23,15 @@ body {
    h1 {
       margin: 0;
       font-family: $primary-heading-font;
-      // justify-content: center;
-      // align-items: center;
-      // justify-content: center;
-      // align-items: center;
    }
    h2 {
       margin: 0;
       font-family: $secondary-heading-font;
       color: lighten($secondary-font-color,5%);
       //color: rgba($secondary-font-color, .7);
+   }
+   .service {
+   animation: zoomInDown 4s infinite;
    }
 }
 .projects-main-section {
@@ -48,6 +47,17 @@ h2 {
 }
 section {
    padding-bottom: 10px;
+}
+section > h1{
+   font-size: 28px;
+}
+section > h2{
+   font-size: 23px;
+   width: 214px;
+   transition: width 1s ease-in;
+   &:hover {
+      width: 100%;
+   }
 }
 .container {
    display: flex;
@@ -74,12 +84,17 @@ img {
    border: 4px solid $secondary-background-color;
    border-radius: 10px;
 }
-
+// @keyframes servicerequest {
+   // transform: zoomInDown;
+//  0% {
+    
+//  }  
+// }
 
 
 
 /*Medium screens and up*/
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
    .intro {
       height: 100vh;
       h1 {
@@ -110,6 +125,12 @@ img {
          padding-top: 100px;
          padding-bottom: 100px;
       }
+   }
+   section > h1{
+      font-size: 36px;
+   }
+   section > h2{
+      font-size: 28px;
    }
    .site-pic {
       width: 360px;
