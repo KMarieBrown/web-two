@@ -35,9 +35,6 @@ body {
       height: 15px;
       border: none;
    }
-   // .service {
-   // animation: zoomInDown 4s infinite;
-   // }
 }
 .projects-main-section {
    @include main-section-style;
@@ -104,7 +101,7 @@ img {
    cursor: pointer;
    animation: slowscale 4s infinite;
 }
-section aside {
+aside {
    padding-top: 10px;
 }
 @keyframes slowscale {
