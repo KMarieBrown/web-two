@@ -442,6 +442,7 @@ section > h2 {
 
 section > h2:hover {
   width: 100%;
+  cursor: pointer;
 }
 
 .container {
@@ -481,13 +482,31 @@ section > h2:hover {
 .site-pic {
   width: 180px;
   height: 121px;
-  -webkit-animation: slowscale 6s infinite;
-          animation: slowscale 6s infinite;
 }
 
 img {
   border: 4px solid #837088;
   border-radius: 10px;
+}
+
+.button {
+  background-color: #290C31;
+  color: #837088;
+  border: none;
+  border-radius: 5px;
+  margin: 4px 2px;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-animation: slowscale 4s infinite;
+          animation: slowscale 4s infinite;
+}
+
+section aside {
+  padding-top: 10px;
 }
 
 @-webkit-keyframes slowscale {
