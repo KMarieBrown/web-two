@@ -355,7 +355,7 @@ body {
   background-size: cover;
   background-position: center;
   margin: 0;
-  height: 30vh;
+  height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,16 +374,22 @@ body {
 .intro h1 {
   margin: 0;
   font-family: "Rochester", cursive;
+  font-size: 40px;
+  padding: 15px 0px;
 }
 
 .intro h2 {
   margin: 0;
   font-family: "Spectral", cursive;
+  font-size: 25px;
   color: #3a1145;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .intro div img {
-  margin-top: 15px;
+  margin-top: 0px;
+  padding-top: 10px 0px;
   height: 15px;
   border: none;
 }
@@ -533,12 +539,12 @@ aside {
     height: 100vh;
   }
   .intro h1 {
-    font-size: 75px;
+    font-size: 80px;
   }
   .intro h2 {
     font-size: 50px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .intro .arrows {
     margin-top: 75px;
@@ -558,10 +564,13 @@ aside {
 
 /*Big screens*/
 @media screen and (min-width: 1024px) {
+  .intro h1 {
+    font-size: 100px;
+  }
   .intro h2 {
-    font-size: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    font-size: 65px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   section > h1 {
     font-size: 36px;
