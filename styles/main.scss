@@ -53,15 +53,15 @@ section {
 section > h1{
    font-size: 28px;
 }
-section > h2{
-   font-size: 23px;
-   width: 214px;
-   transition: width 1s ease-in;
-   &:hover {
-      width: 100%;
-      cursor: pointer;
-   }
-}
+// section > h2{
+//    font-size: 23px;
+//    width: 214px;
+//    transition: width 1s ease-in;
+//    &:hover {
+//       width: 100%;
+//       cursor: pointer;
+//    }
+// }
 .container {
    display: flex;
    flex-direction: row;

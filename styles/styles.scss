@@ -1,0 +1,10 @@
+// Required for customization
+@import "./scss/variables";
+@import "./scss/mixins";
+@import "./scss/functions";
+
+
+
+
+//import at the end of our custom styles
+@import "./scss/bootstrap.scss";
