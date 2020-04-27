@@ -11,19 +11,29 @@ body {
 }
 .intro {
    background-image: url(../assets/images/purple-abstract-blur.jpg);
+   opacity: 0.85;
    background-size: cover;
    background-position: center;
    margin: 0;
-   padding: 50px 5px 0px;
-   height: 25vh;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    h1 {
       margin: 0;
       font-family: $primary-heading-font;
    }
    h2 {
+      margin: 0;
       font-family: $secondary-heading-font;
       color: lighten($secondary-font-color,5%);
       //color: rgba($secondary-font-color, .7);
+   }
+   div img {
+      margin-top: 15px;
+      height: 15px;
+      border: none;
    }
 }
 .projects-main-section {
@@ -34,9 +44,23 @@ body {
 }
 h2 {
    margin-top: 0px;
+   padding-top: 25px;
+   padding-bottom: 25px;
 }
 section {
    padding-bottom: 10px;
+}
+section > h1{
+   font-size: 28px;
+}
+section > h2{
+   font-size: 23px;
+   width: 214px;
+   transition: width 1s ease-in;
+   &:hover {
+      width: 100%;
+      cursor: pointer;
+   }
 }
 .container {
    display: flex;
@@ -44,9 +68,16 @@ section {
    padding-bottom: 20px;
    justify-content: space-evenly;
    align-items: center;
+   flex-wrap: wrap;
 }
 .site-frame-match {
-   order: 2;
+   flex-basis: 50%;
+}
+.site-frame-mariah {
+   flex-basis: 50%;
+}
+.site-frame-hope {
+   flex-basis: 50%;
 }
 .site-pic {
    width: 180px;
@@ -56,16 +87,91 @@ img {
    border: 4px solid $secondary-background-color;
    border-radius: 10px;
 }
+.button {
+   background-color: $secondary-font-color;
+   color: $secondary-background-color;
+   border: none;
+   border-radius: 5px;
+   margin: 4px 2px;
+   padding: 7px 12px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   cursor: pointer;
+   animation: slowscale 4s infinite;
+}
+aside {
+   padding-top: 10px;
+}
+@keyframes slowscale {
+ 0% {
+    transform: none;
+ }
+ 50% {
+   transform: scale(1.1);
+ }  
+ 100% {
+   transform: none;
+ }
+}
 
 
 
-
-
-// Medium screens and up
-@media (min-width: 768px) {
-   
+/*Medium screens and up*/
+@media only screen and (min-width: 768px) {
+   .intro {
+      height: 100vh;
+      h1 {
+         font-size: 75px;
+      }
+      h2 {
+         font-size: 50px;
+         padding-top: 75px;
+         padding-bottom: 75px;
+      }
+      .arrows {
+         margin-top: 75px;
+         height: 55px;
+         border: none;  
+      }
+      div img {
+         margin-top: 75px;
+         height: 50px;
+         border: none;  
+      }
    }
-// Big screens
- @media (min-width: 1024px) {
-   
+   .site-pic {
+      width: 360px;
+      height: 242px;
    }
+}
+
+
+/*Big screens*/
+@media screen and (min-width: 1024px) {
+   .intro { 
+      h2 {
+         font-size: 50px;
+         padding-top: 100px;
+         padding-bottom: 100px;
+      }
+   }
+   section > h1{
+      font-size: 36px;
+   }
+   section > h2{
+      font-size: 28px;
+   }
+   .site-frame-match {
+      flex-basis: 30%;
+   }
+   .site-frame-mariah {
+      flex-basis: 30%;
+   }
+   .site-frame-hope {
+      flex-basis: 30%;
+   }
+}
+      
+   

@@ -3,6 +3,7 @@
         font-family: $primary-heading-font;
         color: lighten($secondary-font-color,5%);
         text-decoration-line: underline;
+        text-shadow: 4px 4px 4px $secondary-background-color;
      }
      p {
         font-family: $secondary-heading-font;
