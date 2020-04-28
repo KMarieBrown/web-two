@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -25,7 +25,7 @@
                   <a class="nav-link" href="#">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">About Me</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
@@ -49,7 +49,18 @@
     <section class="projects-subsection">
         <h2>Websites</h2>
         <div class="container">
-            <div class="site-frame-match">
+            <div class="bg-transparent text-light text-center col-6 col-sm-6 col-lg-4">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<p/>
+                    <img class="site-pic" src="assets/images/match.png" alt="Snapshot of Mariah Carey's Website">   
+                </div>
+            <div class="bg-transparent text-light text-center col 6 col-sm-6 col-lg-4">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<p/>
+                    <img class="site-pic" src="assets/images/mariah.png" alt="Snapshot of Matchmaking Website">   
+                </div>
+            <div class="bg-transparent text-light text-center col-lg-4">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<p/>
+                    <img class="site-pic" src="assets/images/hope.png" alt="Snapshot of Hope's Website">   
+            <!-- <div class="site-frame-match">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <img class="site-pic" src="assets/images/match.png" alt="Snapshot of Mariah Carey's Website">
             </div>
@@ -60,7 +71,8 @@
             <div class="site-frame-hope">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <img class="site-pic" src="assets/images/hope.png" alt="Snapshot of Hope's Website">
-            </div>
+            </div> -->
+        </div>
         </div>
     </section>
     <section class="projects-subsection">
@@ -86,10 +98,29 @@
     </section>
     <section class="projects-main-section">
         <h1>Contact</h1>
-        <p>Lorem ipsum@dolor sit</p>
+        <p>Have a question? Ready to work together? Leave a message.</p>
+        <div class="container">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputName1">Name</label>
+                    <input type="text" class="form-control" id="inputName1" placeholder="Full Name"> 
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword1">Email Address</label>
+                    <input type="email" class="form-control" id="inputPassword1" placeholder="name@example.com">
+                  </div>
+                </div>
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter message"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+        </div>
     </section>
     <footer>
-        Find me on
+        <!-- Find me on -->
     </footer>
     <script src="js/main.js"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
