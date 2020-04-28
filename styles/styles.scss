@@ -4,7 +4,10 @@
 @import "./scss/mixins";
 
 
-
+$theme-colors: (
+  "dark": #290C31,
+  "light": #837088,
+);
 
 
 //import at the end of our custom styles

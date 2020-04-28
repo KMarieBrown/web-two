@@ -44,9 +44,19 @@ body {
 }
 .projects-main-section {
    @include main-section-style;
+   p {
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 18px;
+   }
 }
 .projects-subsection {
    @include subsection-style;
+   p {
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 18px;
+   }
 }
 h2 {
    margin-top: 0px;
@@ -150,8 +160,29 @@ aside {
    .site-pic {
       width: 220px;
       height: 260px;
+   }section > h1{
+      font-size: 45px;
+   }
+   section > h2{
+      font-size: 38px;
+   }
+   section > p {
+      font-size: 35px;
+   }
+   .projects-main-section {
+      @include main-section-style;
+      p {
+         font-size: 22px;
+      }
+   }
+   .projects-subsection {
+      @include subsection-style;
+      p {
+         font-size: 22px;
+      }
    }
 }
+
 
 
 /*Big screens*/
@@ -167,10 +198,10 @@ aside {
       }
    }
    section > h1{
-      font-size: 36px;
+      font-size: 55px;
    }
    section > h2{
-      font-size: 28px;
+      font-size: 48px;
    }
    // .site-frame-match {
    //    flex-basis: 30%;
