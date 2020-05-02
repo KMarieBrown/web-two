@@ -1,3 +1,19 @@
+// Required for customization
+@import "./scss/functions";
+@import "./scss/variables";
+@import "./scss/mixins";
+
+
+$theme-colors: (
+  "dark": #290C31,
+  "light": #837088,
+);
+
+
+//import at the end of our custom styles
+@import "./scss/bootstrap.scss";
+
+
 @import "./vendor/normalize";
 @import "./partials/colors";
 @import "./partials/mixins";
@@ -15,7 +31,7 @@ body {
    background-size: cover;
    background-position: center;
    margin: 0;
-   height: 30vh;
+   height: 35vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -23,24 +39,40 @@ body {
    h1 {
       margin: 0;
       font-family: $primary-heading-font;
+      font-size: 40px;
+      padding:15px 0px;
    }
    h2 {
       margin: 0;
       font-family: $secondary-heading-font;
+      font-size: 25px;
       color: lighten($secondary-font-color,5%);
       //color: rgba($secondary-font-color, .7);
+      padding-top: 0px;
+      padding-bottom: 0px;
    }
    div img {
-      margin-top: 15px;
+      margin-top: 0px;
+      padding-top: 10px 0px;
       height: 15px;
       border: none;
    }
 }
 .projects-main-section {
    @include main-section-style;
+   p {
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 18px;
+   }
 }
 .projects-subsection {
    @include subsection-style;
+   p {
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 18px;
+   }
 }
 h2 {
    margin-top: 0px;
@@ -53,15 +85,15 @@ section {
 section > h1{
    font-size: 28px;
 }
-section > h2{
-   font-size: 23px;
-   width: 214px;
-   transition: width 1s ease-in;
-   &:hover {
-      width: 100%;
-      cursor: pointer;
-   }
-}
+// section > h2{
+//    font-size: 23px;
+//    width: 214px;
+//    transition: width 1s ease-in;
+//    &:hover {
+//       width: 100%;
+//       cursor: pointer;
+//    }
+// }
 .container {
    display: flex;
    flex-direction: row;
@@ -70,23 +102,23 @@ section > h2{
    align-items: center;
    flex-wrap: wrap;
 }
-.site-frame-match {
-   flex-basis: 50%;
-}
-.site-frame-mariah {
-   flex-basis: 50%;
-}
-.site-frame-hope {
-   flex-basis: 50%;
-}
+// .site-frame-match {
+//    flex-basis: 50%;
+// }
+// .site-frame-mariah {
+//    flex-basis: 50%;
+// }
+// .site-frame-hope {
+//    flex-basis: 50%;
+// }
 .site-pic {
-   width: 180px;
-   height: 121px;
+   width: 190px;
+   height: 230px;
 }
-img {
-   border: 4px solid $secondary-background-color;
-   border-radius: 10px;
-}
+// img {
+//    border: 4px solid $secondary-background-color;
+//    border-radius: 10px;
+// }
 .button {
    background-color: $secondary-font-color;
    color: $secondary-background-color;
@@ -123,12 +155,12 @@ aside {
    .intro {
       height: 100vh;
       h1 {
-         font-size: 75px;
+         font-size: 80px;
       }
       h2 {
          font-size: 50px;
-         padding-top: 75px;
-         padding-bottom: 75px;
+         padding-top: 30px;
+         padding-bottom: 30px;
       }
       .arrows {
          margin-top: 75px;
@@ -142,35 +174,63 @@ aside {
       }
    }
    .site-pic {
-      width: 360px;
-      height: 242px;
+      width: 220px;
+      height: 260px;
+   }section > h1{
+      font-size: 45px;
+   }
+   section > h2{
+      font-size: 38px;
+   }
+   section > p {
+      font-size: 35px;
+   }
+   .projects-main-section {
+      @include main-section-style;
+      p {
+         font-size: 22px;
+      }
+   }
+   .projects-subsection {
+      @include subsection-style;
+      p {
+         font-size: 22px;
+      }
    }
 }
+
 
 
 /*Big screens*/
 @media screen and (min-width: 1024px) {
    .intro { 
+      h1 {
+         font-size: 100px;
+      }
       h2 {
-         font-size: 50px;
-         padding-top: 100px;
-         padding-bottom: 100px;
+         font-size: 65px;
+         padding-top: 50px;
+         padding-bottom: 50px;
       }
    }
    section > h1{
-      font-size: 36px;
+      font-size: 55px;
    }
    section > h2{
-      font-size: 28px;
+      font-size: 48px;
    }
-   .site-frame-match {
-      flex-basis: 30%;
-   }
-   .site-frame-mariah {
-      flex-basis: 30%;
-   }
-   .site-frame-hope {
-      flex-basis: 30%;
+   // .site-frame-match {
+   //    flex-basis: 30%;
+   // }
+   // .site-frame-mariah {
+   //    flex-basis: 30%;
+   // }
+   // .site-frame-hope {
+   //    flex-basis: 30%;
+   // }
+   .site-pic {
+      width: 300px;
+      height: 340px;
    }
 }
       
