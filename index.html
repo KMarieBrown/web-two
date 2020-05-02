@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
+
 <body>
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,7 +40,7 @@
         <h2>Front-End Web Developer</h2>
         <h1 class="animated zoomInDown delay-1s">How Can I Be of Service?</h1>
         <div>
-            <img class="animated infinite fadeInDown delay-3s" src="assets/images/iconfinder_double-arrow-down_383153.png">
+            <img class="animated infinite fadeInDown delay-3s" id="arrow" src="assets/images/iconfinder_double-arrow-down_383153.png">
         </div>
     </div>
     <section class="projects-main-section">
@@ -58,27 +60,13 @@
                 </div>
             <div class="bg-transparent text-light text-center col-lg-4">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<p/>
-                    <img class="site-pic" src="assets/images/hope.png" alt="Snapshot of Hope's Website">   
-            <!-- <div class="site-frame-match">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <img class="site-pic" src="assets/images/match.png" alt="Snapshot of Mariah Carey's Website">
-            </div>
-            <div class="site-frame-mariah">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <img class="site-pic" src="assets/images/mariah.png" alt="Snapshot of Matchmaking Website">
-            </div>
-            <div class="site-frame-hope">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <img class="site-pic" src="assets/images/hope.png" alt="Snapshot of Hope's Website">
-            </div> -->
+                    <img class="site-pic" src="assets/images/hope.png" alt="Snapshot of Hope's Website">
             </div>
         </div>
     </section>
     <section class="projects-subsection">
         <h2>Blog</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui hic in quis aperiam repudiandae officiis asperiores distinctio nam exercitationem voluptatem, ipsa enim sapiente, cum unde ipsam temporibus repellendus cumque voluptas!</p>
-            <!-- <img class="site-pic" src="assets/images/checkup.png" alt="Snapshot of Blog Website">
-        <p> -->
             <div id="carouselWithIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselWithIndicators" data-slide-to="0" class="active"></li>
@@ -107,7 +95,7 @@
                 </a>
               </div>
             </p>
-        <a href="#" class="button">NEWSLETTER</a>
+        <button class="button" onclick="openWin()">NEWSLETTER</button>
     </section>
     <section class="projects-main-section">
         <h1>About Me</h1>
@@ -141,16 +129,18 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter message"></textarea>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-dark">Submit</button>
+                <button type="submit" class="btn btn-dark" id="submitBtn">Submit</button>
               </form>
         </div>
     </section>
     <footer>
         <!-- Find me on -->
     </footer>
-    <script src="js/main.js"></script> 
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script> 
 </body>
 </html>

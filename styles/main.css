@@ -11260,6 +11260,7 @@ section > h1 {
 .button {
   background-color: #290C31;
   color: #837088;
+  font-family: "Spectral", cursive;
   border: none;
   border-radius: 5px;
   margin: 4px 2px;
