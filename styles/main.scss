@@ -1,3 +1,19 @@
+// Required for customization
+@import "./scss/functions";
+@import "./scss/variables";
+@import "./scss/mixins";
+
+
+$theme-colors: (
+  "dark": #290C31,
+  "light": #837088,
+);
+
+
+//import at the end of our custom styles
+@import "./scss/bootstrap.scss";
+
+
 @import "./vendor/normalize";
 @import "./partials/colors";
 @import "./partials/mixins";
