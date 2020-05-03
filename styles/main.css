@@ -11308,6 +11308,23 @@ aside {
   }
 }
 
+footer {
+  background-color: #949191;
+  font-family: "Spectral", cursive;
+  color: #3a1145;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.end {
+  margin-bottom: 25px;
+}
+
 /*Medium screens and up*/
 @media only screen and (min-width: 768px) {
   .intro {
@@ -11376,6 +11393,13 @@ aside {
   .projects-subsection p {
     font-size: 22px;
   }
+  footer {
+    font-size: 20px;
+  }
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /*Big screens*/
@@ -11397,6 +11421,13 @@ aside {
   .site-pic {
     width: 300px;
     height: 340px;
+  }
+  footer {
+    font-size: 22px;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
