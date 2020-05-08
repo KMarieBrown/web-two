@@ -102,26 +102,14 @@ section > h1{
    align-items: center;
    flex-wrap: wrap;
 }
-// .site-frame-match {
-//    flex-basis: 50%;
-// }
-// .site-frame-mariah {
-//    flex-basis: 50%;
-// }
-// .site-frame-hope {
-//    flex-basis: 50%;
-// }
 .site-pic {
    width: 190px;
    height: 230px;
 }
-// img {
-//    border: 4px solid $secondary-background-color;
-//    border-radius: 10px;
-// }
 .button {
    background-color: $secondary-font-color;
    color: $secondary-background-color;
+   font-family: $secondary-heading-font;
    border: none;
    border-radius: 5px;
    margin: 4px 2px;
@@ -147,6 +135,21 @@ aside {
    transform: none;
  }
 }
+footer {
+   background-color: #949191;
+   font-family: $paragraph-font;
+   color: lighten($secondary-font-color,5%);
+   font-size: 18px;
+   padding: 10px 0;
+}
+.logo {
+   height: 30px;
+   width: 30px;
+}
+.end {
+   margin-bottom: 25px;
+}
+
 
 
 
@@ -197,6 +200,13 @@ aside {
          font-size: 22px;
       }
    }
+   footer{
+      font-size: 20px;
+   }
+   .logo {
+      height: 40px;
+      width: 40px;
+   }
 }
 
 
@@ -219,18 +229,16 @@ aside {
    section > h2{
       font-size: 48px;
    }
-   // .site-frame-match {
-   //    flex-basis: 30%;
-   // }
-   // .site-frame-mariah {
-   //    flex-basis: 30%;
-   // }
-   // .site-frame-hope {
-   //    flex-basis: 30%;
-   // }
    .site-pic {
       width: 300px;
       height: 340px;
+   }
+   footer{
+      font-size: 22px;
+   }
+   .logo {
+      height: 50px;
+      width: 50px;
    }
 }
       
