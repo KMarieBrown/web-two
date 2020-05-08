@@ -11274,6 +11274,10 @@ section > h1 {
           animation: slowscale 4s infinite;
 }
 
+.button:hover {
+  color: white;
+}
+
 aside {
   padding-top: 10px;
 }
