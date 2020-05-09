@@ -39,25 +39,30 @@ body {
    h1 {
       margin: 0;
       font-family: $primary-heading-font;
-      font-size: 40px;
+      font-size: 50px;
       padding:15px 0px;
+      color: #000000;
    }
    h2 {
       margin: 0;
       font-family: $secondary-heading-font;
-      font-size: 25px;
+      font-size: 32px;
       color: lighten($secondary-font-color,5%);
-      //color: rgba($secondary-font-color, .7);
-      padding-top: 0px;
-      padding-bottom: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
    }
-   // div img {
-   //    display: none;
-   //    margin-top: 0px;
-   //    padding-top: 10px 0px;
-   //    height: 15px;
-   //    border: none;
-   // }
+}
+section > h1{
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+section > h2{
+   font-size: 38px;
+   margin-bottom: 40px;
+}
+section > p {
+   font-size: 22px;
+   margin: 25px 0px;
 }
 #my-content { 
    display: none; 
@@ -65,39 +70,23 @@ body {
 .projects-main-section {
    @include main-section-style;
    p {
-      padding-left: 2px;
-      padding-right: 2px;
-      font-size: 18px;
+      padding-left: 4px;
+      padding-right: 4px;
+      margin: 25px 0px;
    }
 }
 .projects-subsection {
    @include subsection-style;
    p {
-      padding-left: 2px;
-      padding-right: 2px;
-      font-size: 18px;
+      padding-left: 4px;
+      padding-right: 4px;
+      font-size: 20px;
+      margin: 25px 0px;
    }
-}
-h2 {
-   margin-top: 0px;
-   padding-top: 25px;
-   padding-bottom: 25px;
 }
 section {
    padding-bottom: 10px;
 }
-section > h1{
-   font-size: 28px;
-}
-// section > h2{
-//    font-size: 23px;
-//    width: 214px;
-//    transition: width 1s ease-in;
-//    &:hover {
-//       width: 100%;
-//       cursor: pointer;
-//    }
-// }
 .container {
    display: flex;
    flex-direction: row;
@@ -168,47 +157,37 @@ form {
    .intro {
       height: 100vh;
       h1 {
-         font-size: 80px;
+         font-size: 90px;
       }
       h2 {
-         font-size: 50px;
+         font-size: 60px;
          padding-top: 30px;
          padding-bottom: 30px;
       }
-      // div {
-      //    margin-top: 75px;
-      //    height: 55px;
-      //    border: none;  
-      // }
       div img {
-         margin-top: 75px;
-         height: 55px;
+         margin-top: 65px;
+         height: 65px;
          border: none;  
       }
    }
-   .site-pic {
-      width: 220px;
-      height: 260px;
-   }section > h1{
+   section > h1{
       font-size: 45px;
    }
    section > h2{
       font-size: 38px;
    }
    section > p {
-      font-size: 35px;
-   }
-   .projects-main-section {
-      @include main-section-style;
-      p {
-         font-size: 22px;
-      }
+      font-size: 26px;
    }
    .projects-subsection {
       @include subsection-style;
       p {
-         font-size: 22px;
+         font-size: 24px;
       }
+   }
+   .site-pic {
+      width: 220px;
+      height: 260px;
    }
    footer{
       font-size: 20px;
@@ -228,12 +207,16 @@ form {
 @media screen and (min-width: 1024px) {
    .intro { 
       h1 {
-         font-size: 100px;
+         font-size: 110px;
       }
       h2 {
-         font-size: 65px;
+         font-size: 75px;
          padding-top: 50px;
          padding-bottom: 50px;
+      }
+      div img {
+         margin-top: 55px;
+         height: 75px;
       }
    }
    section > h1{
@@ -241,6 +224,15 @@ form {
    }
    section > h2{
       font-size: 48px;
+   }
+   section > p {
+      font-size: 28px;
+   }
+   .projects-subsection {
+      @include subsection-style;
+      p {
+         font-size: 26px;
+      }
    }
    .site-pic {
       width: 300px;

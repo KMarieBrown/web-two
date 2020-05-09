@@ -11156,17 +11156,33 @@ body {
 .intro h1 {
   margin: 0;
   font-family: "Rochester", cursive;
-  font-size: 40px;
+  font-size: 50px;
   padding: 15px 0px;
+  color: #000000;
 }
 
 .intro h2 {
   margin: 0;
   font-family: "Spectral", cursive;
-  font-size: 25px;
+  font-size: 32px;
   color: #3a1145;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+section > h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+section > h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+section > p {
+  font-size: 22px;
+  margin: 25px 0px;
 }
 
 #my-content {
@@ -11187,9 +11203,9 @@ body {
 }
 
 .projects-main-section p {
-  padding-left: 2px;
-  padding-right: 2px;
-  font-size: 18px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 25px 0px;
 }
 
 .projects-subsection {
@@ -11211,23 +11227,14 @@ body {
 }
 
 .projects-subsection p {
-  padding-left: 2px;
-  padding-right: 2px;
-  font-size: 18px;
-}
-
-h2 {
-  margin-top: 0px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 20px;
+  margin: 25px 0px;
 }
 
 section {
   padding-bottom: 10px;
-}
-
-section > h1 {
-  font-size: 28px;
 }
 
 .container {
@@ -11337,21 +11344,17 @@ form {
     height: 100vh;
   }
   .intro h1 {
-    font-size: 80px;
+    font-size: 90px;
   }
   .intro h2 {
-    font-size: 50px;
+    font-size: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .intro div img {
-    margin-top: 75px;
-    height: 55px;
+    margin-top: 65px;
+    height: 65px;
     border: none;
-  }
-  .site-pic {
-    width: 220px;
-    height: 260px;
   }
   section > h1 {
     font-size: 45px;
@@ -11360,21 +11363,7 @@ form {
     font-size: 38px;
   }
   section > p {
-    font-size: 35px;
-  }
-  .projects-main-section h1 {
-    font-family: "Rochester", cursive;
-    color: #3a1145;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-    text-shadow: 4px 4px 4px #837088;
-  }
-  .projects-main-section p {
-    font-family: "Spectral", cursive;
-    color: #3a1145;
-  }
-  .projects-main-section p {
-    font-size: 22px;
+    font-size: 26px;
   }
   .projects-subsection {
     background-color: #c0b5c2;
@@ -11392,7 +11381,11 @@ form {
     color: #3a1145;
   }
   .projects-subsection p {
-    font-size: 22px;
+    font-size: 24px;
+  }
+  .site-pic {
+    width: 220px;
+    height: 260px;
   }
   footer {
     font-size: 20px;
@@ -11409,18 +11402,43 @@ form {
 /*Big screens*/
 @media screen and (min-width: 1024px) {
   .intro h1 {
-    font-size: 100px;
+    font-size: 110px;
   }
   .intro h2 {
-    font-size: 65px;
+    font-size: 75px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .intro div img {
+    margin-top: 55px;
+    height: 75px;
   }
   section > h1 {
     font-size: 55px;
   }
   section > h2 {
     font-size: 48px;
+  }
+  section > p {
+    font-size: 28px;
+  }
+  .projects-subsection {
+    background-color: #c0b5c2;
+  }
+  .projects-subsection h2 {
+    font-family: "Rochester", cursive;
+    color: #3a1145;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    background-color: #9b8ba0;
+    padding: 7px 0;
+  }
+  .projects-subsection p {
+    font-family: "Spectral", cursive;
+    color: #3a1145;
+  }
+  .projects-subsection p {
+    font-size: 26px;
   }
   .site-pic {
     width: 300px;
