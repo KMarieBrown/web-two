@@ -11169,11 +11169,8 @@ body {
   padding-bottom: 0px;
 }
 
-.intro div img {
-  margin-top: 0px;
-  padding-top: 10px 0px;
-  height: 15px;
-  border: none;
+#my-content {
+  display: none;
 }
 
 .projects-main-section h1 {
@@ -11329,6 +11326,11 @@ footer {
   margin-bottom: 25px;
 }
 
+form {
+  font-family: "Spectral", cursive !important;
+  color: #3a1145;
+}
+
 /*Medium screens and up*/
 @media only screen and (min-width: 768px) {
   .intro {
@@ -11342,14 +11344,9 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .intro .arrows {
-    margin-top: 75px;
-    height: 55px;
-    border: none;
-  }
   .intro div img {
     margin-top: 75px;
-    height: 50px;
+    height: 55px;
     border: none;
   }
   .site-pic {
@@ -11403,6 +11400,9 @@ footer {
   .logo {
     height: 40px;
     width: 40px;
+  }
+  #my-content {
+    display: block;
   }
 }
 

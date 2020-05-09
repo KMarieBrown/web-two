@@ -51,12 +51,16 @@ body {
       padding-top: 0px;
       padding-bottom: 0px;
    }
-   div img {
-      margin-top: 0px;
-      padding-top: 10px 0px;
-      height: 15px;
-      border: none;
-   }
+   // div img {
+   //    display: none;
+   //    margin-top: 0px;
+   //    padding-top: 10px 0px;
+   //    height: 15px;
+   //    border: none;
+   // }
+}
+#my-content { 
+   display: none; 
 }
 .projects-main-section {
    @include main-section-style;
@@ -152,7 +156,10 @@ footer {
 .end {
    margin-bottom: 25px;
 }
-
+form {
+   font-family: $paragraph-font!important;
+   color: lighten($secondary-font-color,5%);
+}
 
 
 
@@ -168,14 +175,14 @@ footer {
          padding-top: 30px;
          padding-bottom: 30px;
       }
-      .arrows {
-         margin-top: 75px;
-         height: 55px;
-         border: none;  
-      }
+      // div {
+      //    margin-top: 75px;
+      //    height: 55px;
+      //    border: none;  
+      // }
       div img {
          margin-top: 75px;
-         height: 50px;
+         height: 55px;
          border: none;  
       }
    }
@@ -209,6 +216,9 @@ footer {
    .logo {
       height: 40px;
       width: 40px;
+   }
+   #my-content { 
+      display: block; 
    }
 }
 
