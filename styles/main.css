@@ -11184,8 +11184,12 @@ section > p {
   font-size: 22px;
 }
 
-#my-content {
+.my-content {
   display: none;
+}
+
+.my-content2 {
+  display: block;
 }
 
 .projects-main-section h1 {
@@ -11254,6 +11258,16 @@ section {
 .site-pic {
   width: 190px;
   height: 230px;
+}
+
+.blog-pic {
+  width: 307px;
+  height: 207px;
+}
+
+.blog-pic-standalone {
+  width: 407px;
+  height: 237px;
 }
 
 .button {
@@ -11367,6 +11381,10 @@ form {
   cursor: pointer;
 }
 
+.space-above {
+  margin-top: 40px;
+}
+
 /*Medium screens and up*/
 @media only screen and (min-width: 768px) {
   .intro {
@@ -11395,6 +11413,10 @@ form {
     width: 220px;
     height: 260px;
   }
+  .blog-pic {
+    width: 507px;
+    height: 307px;
+  }
   footer {
     font-size: 20px;
   }
@@ -11402,8 +11424,11 @@ form {
     height: 40px;
     width: 40px;
   }
-  #my-content {
+  .my-content {
     display: block;
+  }
+  .my-content2 {
+    display: none;
   }
   .narrow {
     padding-left: 60px;
@@ -11441,6 +11466,10 @@ form {
   .site-pic {
     width: 300px;
     height: 340px;
+  }
+  .blog-pic {
+    width: 707px;
+    height: 307px;
   }
   footer {
     font-size: 21px;

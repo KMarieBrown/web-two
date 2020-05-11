@@ -63,8 +63,11 @@ section > h2{
 section > p {
    font-size: 22px;
 }
-#my-content { 
+.my-content { 
    display: none; 
+}
+.my-content2 {
+   display: block;
 }
 .projects-main-section {
    @include main-section-style;
@@ -93,6 +96,14 @@ section {
 .site-pic {
    width: 190px;
    height: 230px;
+}
+.blog-pic {
+   width: 307px;
+   height: 207px;
+}
+.blog-pic-standalone {
+   width: 407px;
+   height: 237px;
 }
 .button {
    background-color: $secondary-font-color;
@@ -176,6 +187,9 @@ form {
    cursor: pointer;
    // animation: slowscale 4s infinite;
 }
+.space-above {
+   margin-top: 40px;
+}
 
 
 
@@ -208,6 +222,10 @@ form {
       width: 220px;
       height: 260px;
    }
+   .blog-pic {
+      width: 507px;
+      height: 307px;
+   }
    footer{
       font-size: 20px;
    }
@@ -215,8 +233,11 @@ form {
       height: 40px;
       width: 40px;
    }
-   #my-content { 
+   .my-content { 
       display: block; 
+   }
+   .my-content2 {
+      display: none;
    }
    .narrow {
       padding-left: 60px;
@@ -260,6 +281,10 @@ form {
    .site-pic {
       width: 300px;
       height: 340px;
+   }
+   .blog-pic {
+      width: 707px;
+      height: 307px;
    }
    footer{
       font-size: 21px;
