@@ -11182,7 +11182,6 @@ section > h2 {
 
 section > p {
   font-size: 22px;
-  margin: 25px 0px;
 }
 
 #my-content {
@@ -11203,8 +11202,6 @@ section > p {
 }
 
 .projects-main-section p {
-  padding-left: 4px;
-  padding-right: 4px;
   margin: 25px 0px;
 }
 
@@ -11227,14 +11224,12 @@ section > p {
 }
 
 .projects-subsection p {
-  padding-left: 4px;
-  padding-right: 4px;
   font-size: 20px;
   margin: 25px 0px;
 }
 
 section {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -11283,7 +11278,12 @@ section {
 }
 
 aside {
-  padding-top: 10px;
+  padding-top: 40px;
+}
+
+aside p {
+  font-family: "Rochester", cursive !important;
+  font-size: 30px !important;
 }
 
 @-webkit-keyframes slowscale {
@@ -11336,6 +11336,14 @@ footer {
 form {
   font-family: "Spectral", cursive !important;
   color: #3a1145;
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+.narrow {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
 }
 
 /*Medium screens and up*/
@@ -11362,27 +11370,6 @@ form {
   section > h2 {
     font-size: 38px;
   }
-  section > p {
-    font-size: 26px;
-  }
-  .projects-subsection {
-    background-color: #c0b5c2;
-  }
-  .projects-subsection h2 {
-    font-family: "Rochester", cursive;
-    color: #3a1145;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-    background-color: #9b8ba0;
-    padding: 7px 0;
-  }
-  .projects-subsection p {
-    font-family: "Spectral", cursive;
-    color: #3a1145;
-  }
-  .projects-subsection p {
-    font-size: 24px;
-  }
   .site-pic {
     width: 220px;
     height: 260px;
@@ -11396,6 +11383,14 @@ form {
   }
   #my-content {
     display: block;
+  }
+  .narrow {
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+  }
+  form {
+    margin-top: 50px;
   }
 }
 
@@ -11419,37 +11414,24 @@ form {
   section > h2 {
     font-size: 48px;
   }
-  section > p {
-    font-size: 28px;
-  }
-  .projects-subsection {
-    background-color: #c0b5c2;
-  }
-  .projects-subsection h2 {
-    font-family: "Rochester", cursive;
-    color: #3a1145;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-    background-color: #9b8ba0;
-    padding: 7px 0;
-  }
-  .projects-subsection p {
-    font-family: "Spectral", cursive;
-    color: #3a1145;
-  }
-  .projects-subsection p {
-    font-size: 26px;
-  }
   .site-pic {
     width: 300px;
     height: 340px;
   }
   footer {
-    font-size: 22px;
+    font-size: 21px;
   }
   .logo {
     height: 50px;
     width: 50px;
+  }
+  .narrow {
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: justify;
+  }
+  form {
+    margin-top: 65px;
   }
 }
 /*# sourceMappingURL=main.css.map */
