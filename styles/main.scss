@@ -156,7 +156,7 @@ form {
 	font-family: $paragraph-font !important;
 	color: lighten($secondary-font-color, 5%);
 	font-size: 20px;
-	margin-top: 35px;
+	margin-top: 10px;
 	text-align: left;
 }
 .narrow {
@@ -191,7 +191,7 @@ form {
 	text-align: center;
 }
 
-/*Medium screens and up*/
+/* ------------ For medium screens ------------ */
 @media only screen and (min-width: 768px) {
 	.intro {
 		height: 100vh;
@@ -238,7 +238,7 @@ form {
 		text-align: left;
 	}
 	form {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 	#myBtn {
 		font-size: 16px;
@@ -248,7 +248,7 @@ form {
 	}
 }
 
-/*Big screens*/
+/* ------------ For large screens ------------ */
 @media screen and (min-width: 1024px) {
 	.intro {
 		h1 {
@@ -291,7 +291,7 @@ form {
 		text-align: left;
 	}
 	form {
-		margin-top: 65px;
+		margin-top: 30px;
 	}
 	#myBtn {
 		font-size: 18px;
